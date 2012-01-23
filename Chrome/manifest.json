@@ -1,0 +1,24 @@
+{
+	"name": "Font Finder",
+	"version": "1.0",
+	"description": "Font Finder is designed for any web developer / designer that needs to find out the CSS information of any text on the page.",
+	"permissions": [
+		"contextMenus",
+		"tabs"
+	],
+	"content_scripts": [
+		{
+			"js": ["selection.js"],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	],
+	"background_page": "background.html",
+	"icons": {
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"update_url": "http://bendodson.com/projects/browser-extensions/chrome.xml"
+}
